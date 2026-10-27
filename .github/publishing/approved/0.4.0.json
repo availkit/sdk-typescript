@@ -1,0 +1,9 @@
+{
+  "ecosystem": "typescript",
+  "manifest_sha256": "7330444dcb5cd139255cd99109e88148b619b8d32f7fe811b4217856109ce71e",
+  "package": "@availkit/booking",
+  "schema": 1,
+  "source_commit": "9ff206bc706d45224df4e20908426887858549b4",
+  "tag": "v0.4.0",
+  "version": "0.4.0"
+}
