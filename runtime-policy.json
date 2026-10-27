@@ -1,0 +1,10 @@
+{
+  "version": "0.4.0",
+  "supported": "Node24+; browser fetch/WebAuthn for same-origin browser entry points",
+  "testedBeforeCandidate": [
+    "24.21.0"
+  ],
+  "authority": "workspace server; public capabilities; same-origin browser human/recovery; optional business export",
+  "releaseEvidence": "https://github.com/availkit/sdk-typescript/releases/tag/v0.4.0",
+  "verificationScope": "Supported runtimes are compatibility targets. Listed tested toolchains describe finite native checks; installed-consumer, service, mobile and distribution evidence is recorded separately in dated release notes. Source presence does not establish registry availability."
+}

@@ -1,0 +1,534 @@
+{
+  "human_browser": {
+    "status": "supported",
+    "sdk": "HumanClient.browser",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "GET",
+    "path": "/v1/human/browser"
+  },
+  "human_session": {
+    "status": "supported",
+    "sdk": "HumanClient.session",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "GET",
+    "path": "/v1/human/session"
+  },
+  "human_credentials": {
+    "status": "supported",
+    "sdk": "HumanClient.credentials",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "GET",
+    "path": "/v1/human/credentials"
+  },
+  "human_keys": {
+    "status": "supported",
+    "sdk": "HumanClient.keys",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "GET",
+    "path": "/v1/human/keys"
+  },
+  "human_issue_key": {
+    "status": "supported",
+    "sdk": "HumanClient.issueKey",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/keys"
+  },
+  "human_enroll_start": {
+    "status": "supported",
+    "sdk": "HumanClient.enrollStart",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/enroll/start"
+  },
+  "human_enroll_finish": {
+    "status": "supported",
+    "sdk": "HumanClient.enrollFinish",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/enroll/finish"
+  },
+  "human_login_start": {
+    "status": "supported",
+    "sdk": "HumanClient.loginStart",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/login/start"
+  },
+  "human_login_prove": {
+    "status": "supported",
+    "sdk": "HumanClient.loginProve",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/login/prove"
+  },
+  "human_login_finish": {
+    "status": "supported",
+    "sdk": "HumanClient.loginFinish",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/login/finish"
+  },
+  "human_add_start": {
+    "status": "supported",
+    "sdk": "HumanClient.addStart",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/add/start"
+  },
+  "human_add_finish": {
+    "status": "supported",
+    "sdk": "HumanClient.addFinish",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/add/finish"
+  },
+  "human_reauth_start": {
+    "status": "supported",
+    "sdk": "HumanClient.reauthStart",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/reauth/start"
+  },
+  "human_reauth_finish": {
+    "status": "supported",
+    "sdk": "HumanClient.reauthFinish",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/reauth/finish"
+  },
+  "human_credentials_remove": {
+    "status": "supported",
+    "sdk": "HumanClient.removeCredential",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/credentials/remove"
+  },
+  "human_recovery_codes": {
+    "status": "supported",
+    "sdk": "HumanClient.replaceRecoveryCodes",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/recovery/codes"
+  },
+  "human_recovery_start": {
+    "status": "deferred-disabled",
+    "sdk": null,
+    "cli": "deferred-disabled",
+    "method": "POST",
+    "path": "/v1/human/recovery/start"
+  },
+  "human_recovery_finish": {
+    "status": "deferred-disabled",
+    "sdk": null,
+    "cli": "deferred-disabled",
+    "method": "POST",
+    "path": "/v1/human/recovery/finish"
+  },
+  "human_logout": {
+    "status": "supported",
+    "sdk": "HumanClient.logout",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/logout"
+  },
+  "human_logout-all": {
+    "status": "supported",
+    "sdk": "HumanClient.logoutAll",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/logout-all"
+  },
+  "human_bootstrap": {
+    "status": "supported",
+    "sdk": "HumanClient.bootstrap",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/bootstrap"
+  },
+  "human_keys_revoke": {
+    "status": "supported",
+    "sdk": "HumanClient.revokeKey",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/keys/revoke"
+  },
+  "human_members_list": {
+    "status": "supported",
+    "sdk": "HumanClient.listMembers",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/members/list"
+  },
+  "human_members_grant": {
+    "status": "supported",
+    "sdk": "HumanClient.grantMember",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/members/grant"
+  },
+  "human_members_narrow": {
+    "status": "supported",
+    "sdk": "HumanClient.narrowMember",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/members/narrow"
+  },
+  "human_members_remove": {
+    "status": "supported",
+    "sdk": "HumanClient.removeMember",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/members/remove"
+  },
+  "human_privacy_export": {
+    "status": "supported",
+    "sdk": "HumanClient.exportSubject",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/privacy/export"
+  },
+  "human_privacy_erase": {
+    "status": "supported",
+    "sdk": "HumanClient.eraseSubject",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/privacy/erase"
+  },
+  "human_privacy_spool_prune": {
+    "status": "supported",
+    "sdk": "HumanClient.pruneSpool",
+    "cli": "browser account-to-scoped-key handoff",
+    "method": "POST",
+    "path": "/v1/human/privacy/spool-prune"
+  },
+  "recovery_v2_profile": {
+    "status": "supported",
+    "sdk": "RecoveryClient.profile",
+    "cli": "same-origin recovery v2 browser flow; no account ceremonies in workspace/mobile clients",
+    "method": "GET",
+    "path": "/v2/human/recovery/profile"
+  },
+  "recovery_v2_start": {
+    "status": "supported",
+    "sdk": "RecoveryClient.start",
+    "cli": "same-origin recovery v2 browser flow; no account ceremonies in workspace/mobile clients",
+    "method": "POST",
+    "path": "/v2/human/recovery/start"
+  },
+  "recovery_v2_finish": {
+    "status": "supported",
+    "sdk": "RecoveryClient.finish",
+    "cli": "same-origin recovery v2 browser flow; no account ceremonies in workspace/mobile clients",
+    "method": "POST",
+    "path": "/v2/human/recovery/finish"
+  },
+  "createResource": {
+    "status": "supported",
+    "sdk": "AvailKitClient.createResource",
+    "cli": "resource create",
+    "method": "POST",
+    "path": "/v1/workspaces/{workspaceId}/resources"
+  },
+  "listResources": {
+    "status": "supported",
+    "sdk": "AvailKitClient.listResources",
+    "cli": "resource list",
+    "method": "GET",
+    "path": "/v1/workspaces/{workspaceId}/resources"
+  },
+  "setHours": {
+    "status": "supported",
+    "sdk": "AvailKitClient.replaceHours",
+    "cli": "hours replace",
+    "method": "PUT",
+    "path": "/v1/workspaces/{workspaceId}/resources/{resourceId}/hours"
+  },
+  "getHours": {
+    "status": "supported",
+    "sdk": "AvailKitClient.getHours",
+    "cli": "hours get",
+    "method": "GET",
+    "path": "/v1/workspaces/{workspaceId}/resources/{resourceId}/hours"
+  },
+  "createOffering": {
+    "status": "supported",
+    "sdk": "AvailKitClient.createOffering",
+    "cli": "offering create",
+    "method": "POST",
+    "path": "/v1/workspaces/{workspaceId}/offerings"
+  },
+  "listOfferings": {
+    "status": "supported",
+    "sdk": "AvailKitClient.listOfferings",
+    "cli": "offering list",
+    "method": "GET",
+    "path": "/v1/workspaces/{workspaceId}/offerings"
+  },
+  "availability": {
+    "status": "supported",
+    "sdk": "AvailKitClient.availability",
+    "cli": "availability",
+    "method": "GET",
+    "path": "/v1/workspaces/{workspaceId}/availability"
+  },
+  "book": {
+    "status": "supported",
+    "sdk": "AvailKitClient.book",
+    "cli": "book",
+    "method": "POST",
+    "path": "/v1/workspaces/{workspaceId}/bookings"
+  },
+  "listBookings": {
+    "status": "supported",
+    "sdk": "AvailKitClient.listBookings",
+    "cli": "booking list",
+    "method": "GET",
+    "path": "/v1/workspaces/{workspaceId}/bookings"
+  },
+  "cancel": {
+    "status": "supported",
+    "sdk": "AvailKitClient.cancel",
+    "cli": "cancel",
+    "method": "POST",
+    "path": "/v1/workspaces/{workspaceId}/bookings/{bookingId}/cancel"
+  },
+  "events": {
+    "status": "supported",
+    "sdk": "AvailKitClient.events",
+    "cli": "events",
+    "method": "GET",
+    "path": "/v1/workspaces/{workspaceId}/events"
+  },
+  "getResource": {
+    "status": "supported",
+    "sdk": "AvailKitClient.getResource",
+    "cli": "resource get",
+    "method": "GET",
+    "path": "/v1/workspaces/{workspaceId}/resources/{resourceId}"
+  },
+  "updateResource": {
+    "status": "supported",
+    "sdk": "AvailKitClient.replaceResource",
+    "cli": "resource replace",
+    "method": "PUT",
+    "path": "/v1/workspaces/{workspaceId}/resources/{resourceId}"
+  },
+  "getOffering": {
+    "status": "supported",
+    "sdk": "AvailKitClient.getOffering",
+    "cli": "offering get",
+    "method": "GET",
+    "path": "/v1/workspaces/{workspaceId}/offerings/{offeringId}"
+  },
+  "updateOffering": {
+    "status": "supported",
+    "sdk": "AvailKitClient.replaceOffering",
+    "cli": "offering replace",
+    "method": "PUT",
+    "path": "/v1/workspaces/{workspaceId}/offerings/{offeringId}"
+  },
+  "getBooking": {
+    "status": "supported",
+    "sdk": "AvailKitClient.getBooking",
+    "cli": "booking get",
+    "method": "GET",
+    "path": "/v1/workspaces/{workspaceId}/bookings/{bookingId}"
+  },
+  "createWebhook": {
+    "status": "supported",
+    "sdk": "AvailKitClient.createWebhook",
+    "cli": "webhook create",
+    "method": "POST",
+    "path": "/v1/workspaces/{workspaceId}/webhooks"
+  },
+  "listWebhooks": {
+    "status": "supported",
+    "sdk": "AvailKitClient.listWebhooks",
+    "cli": "webhook list",
+    "method": "GET",
+    "path": "/v1/workspaces/{workspaceId}/webhooks"
+  },
+  "disableWebhook": {
+    "status": "supported",
+    "sdk": "AvailKitClient.disableWebhook",
+    "cli": "webhook disable",
+    "method": "POST",
+    "path": "/v1/workspaces/{workspaceId}/webhooks/{subscriptionId}/disable"
+  },
+  "listWebhookDeliveries": {
+    "status": "supported",
+    "sdk": "AvailKitClient.listWebhookDeliveries",
+    "cli": "webhook deliveries",
+    "method": "GET",
+    "path": "/v1/workspaces/{workspaceId}/webhooks/{subscriptionId}/deliveries"
+  },
+  "getUsage": {
+    "status": "supported",
+    "sdk": "AvailKitClient.getUsage",
+    "cli": "usage",
+    "method": "GET",
+    "path": "/v1/workspaces/{workspaceId}/usage"
+  },
+  "rescheduleBooking": {
+    "status": "supported",
+    "sdk": "AvailKitClient.rescheduleBooking",
+    "cli": "reschedule",
+    "method": "POST",
+    "path": "/v1/workspaces/{workspaceId}/bookings/{bookingId}/reschedule"
+  },
+  "archiveResource": {
+    "status": "supported",
+    "sdk": "AvailKitClient.archiveResource",
+    "cli": "resource archive",
+    "method": "POST",
+    "path": "/v1/workspaces/{workspaceId}/resources/{resourceId}/archive"
+  },
+  "archiveOffering": {
+    "status": "supported",
+    "sdk": "AvailKitClient.archiveOffering",
+    "cli": "offering archive",
+    "method": "POST",
+    "path": "/v1/workspaces/{workspaceId}/offerings/{offeringId}/archive"
+  },
+  "pruneHistory": {
+    "status": "supported",
+    "sdk": "AvailKitClient.pruneHistory",
+    "cli": "history-prune",
+    "method": "POST",
+    "path": "/v1/workspaces/{workspaceId}/maintenance/history"
+  },
+  "createCustomer": {
+    "status": "supported",
+    "sdk": "AvailKitClient.createCustomer",
+    "cli": "customer create",
+    "method": "POST",
+    "path": "/v1/workspaces/{workspaceId}/customers"
+  },
+  "listCustomers": {
+    "status": "supported",
+    "sdk": "AvailKitClient.listCustomers",
+    "cli": "customer list",
+    "method": "GET",
+    "path": "/v1/workspaces/{workspaceId}/customers"
+  },
+  "getCustomer": {
+    "status": "supported",
+    "sdk": "AvailKitClient.getCustomer",
+    "cli": "customer get",
+    "method": "GET",
+    "path": "/v1/workspaces/{workspaceId}/customers/{customerId}"
+  },
+  "replaceCustomer": {
+    "status": "supported",
+    "sdk": "AvailKitClient.replaceCustomer",
+    "cli": "customer replace",
+    "method": "PUT",
+    "path": "/v1/workspaces/{workspaceId}/customers/{customerId}"
+  },
+  "archiveCustomer": {
+    "status": "supported",
+    "sdk": "AvailKitClient.archiveCustomer",
+    "cli": "customer archive",
+    "method": "POST",
+    "path": "/v1/workspaces/{workspaceId}/customers/{customerId}/archive"
+  },
+  "eraseCustomer": {
+    "status": "supported",
+    "sdk": "AvailKitClient.eraseCustomer",
+    "cli": "customers-erase",
+    "method": "POST",
+    "path": "/v1/workspaces/{workspaceId}/customers/{customerId}/erase"
+  },
+  "pruneExpiredReplays": {
+    "status": "supported",
+    "sdk": "AvailKitClient.pruneExpiredReplays",
+    "cli": "replays-prune",
+    "method": "POST",
+    "path": "/v1/workspaces/{workspaceId}/maintenance/expired-replays"
+  },
+  "getPublicPage": {
+    "status": "supported",
+    "sdk": "PublicBookingClient.getPage",
+    "cli": "public browser/server SDK integration; explicit private intent retention",
+    "method": "GET",
+    "path": "/v1/public/pages/{pageId}"
+  },
+  "listPublicOfferings": {
+    "status": "supported",
+    "sdk": "PublicBookingClient.listOfferings",
+    "cli": "public browser/server SDK integration; explicit private intent retention",
+    "method": "GET",
+    "path": "/v1/public/pages/{pageId}/offerings"
+  },
+  "publicAvailability": {
+    "status": "supported",
+    "sdk": "PublicBookingClient.availability",
+    "cli": "public browser/server SDK integration; explicit private intent retention",
+    "method": "GET",
+    "path": "/v1/public/pages/{pageId}/availability"
+  },
+  "bookPublic": {
+    "status": "supported",
+    "sdk": "PublicBookingClient.book",
+    "cli": "public browser/server SDK integration; explicit private intent retention",
+    "method": "POST",
+    "path": "/v1/public/pages/{pageId}/bookings"
+  },
+  "getPublicBooking": {
+    "status": "supported",
+    "sdk": "PublicBookingClient.getBooking",
+    "cli": "public browser/server SDK integration; explicit private intent retention",
+    "method": "GET",
+    "path": "/v1/public/pages/{pageId}/bookings/{bookingId}"
+  },
+  "cancelPublicBooking": {
+    "status": "supported",
+    "sdk": "PublicBookingClient.cancel",
+    "cli": "public browser/server SDK integration; explicit private intent retention",
+    "method": "POST",
+    "path": "/v1/public/pages/{pageId}/bookings/{bookingId}/cancel"
+  },
+  "reschedulePublicBooking": {
+    "status": "supported",
+    "sdk": "PublicBookingClient.reschedule",
+    "cli": "public browser/server SDK integration; explicit private intent retention",
+    "method": "POST",
+    "path": "/v1/public/pages/{pageId}/bookings/{bookingId}/reschedule"
+  },
+  "getBookingPage": {
+    "status": "supported",
+    "sdk": "AvailKitClient.getBookingPage",
+    "cli": "SDK/dashboard publication; documented operator HTTP",
+    "method": "GET",
+    "path": "/v1/workspaces/{workspaceId}/booking-page"
+  },
+  "replaceBookingPage": {
+    "status": "supported",
+    "sdk": "AvailKitClient.replaceBookingPage",
+    "cli": "SDK/dashboard publication; documented operator HTTP",
+    "method": "PUT",
+    "path": "/v1/workspaces/{workspaceId}/booking-page"
+  },
+  "getBusinessExportPage": {
+    "status": "supported",
+    "sdk": "BusinessExportClient.getPage",
+    "cli": "business-export",
+    "method": "GET",
+    "path": "/v1/workspaces/{workspaceId}/export"
+  },
+  "live": {
+    "status": "operator-http",
+    "sdk": null,
+    "cli": "operator HTTP readiness/liveness; API quickstart",
+    "method": "GET",
+    "path": "/live"
+  },
+  "ready": {
+    "status": "operator-http",
+    "sdk": null,
+    "cli": "operator HTTP readiness/liveness; API quickstart",
+    "method": "GET",
+    "path": "/ready"
+  }
+}

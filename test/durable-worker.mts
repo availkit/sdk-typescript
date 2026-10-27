@@ -1,0 +1,10 @@
+import {FileOperationStore} from '../src/operation-files.ts';
+import {SQLiteOperationStore} from '../src/operation-sqlite.ts';
+import {NodeOperationIntent} from '../src/operation-intent.ts';
+import {readFileSync} from 'node:fs';
+import {join} from 'node:path';
+const [directory,kind]=process.argv.slice(2);
+const s=kind==='file'?new FileOperationStore(directory):new SQLiteOperationStore(directory);
+const original=NodeOperationIntent.fromPrivate(readFileSync(join(directory,'original.json'),'utf8'));
+process.stdin.once('data',()=>{try{s.begin('a'.repeat(32),0,original);process.exit(17);}catch(e){if(!['busy','conflict'].includes((e as {code:string}).code))process.exit(99);s.close();process.exit(18);}});
+process.stdout.write('ready');

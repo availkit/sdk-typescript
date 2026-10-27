@@ -1,0 +1,81 @@
+{
+  "name": "@availkit/booking",
+  "version": "0.4.0",
+  "private": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./human": {
+      "types": "./dist/human.d.ts",
+      "import": "./dist/human.js"
+    },
+    "./public": {
+      "types": "./dist/public.d.ts",
+      "import": "./dist/public.js"
+    },
+    "./node": {
+      "types": "./dist/node.d.ts",
+      "import": "./dist/node.js"
+    },
+    "./node/sqlite": {
+      "types": "./dist/operation-sqlite.d.ts",
+      "import": "./dist/operation-sqlite.js"
+    },
+    "./export": {
+      "types": "./dist/business-export.d.ts",
+      "import": "./dist/business-export.js"
+    },
+    "./node/export": {
+      "types": "./dist/business-export-file.d.mts",
+      "import": "./dist/business-export-file.mjs"
+    }
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "node --max-old-space-size=192 --test --test-isolation=none --test-reporter=tap test/*.test.mts",
+    "cli": "node dist/cli.mjs",
+    "typecheck": "tsc --project tsconfig.json",
+    "build": "tsc --project tsconfig.build.json",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.0",
+    "typescript": "5.9.3"
+  },
+  "description": "Independent typed AvailKit API SDK and send-once CLI",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "availkit": "./dist/cli.mjs"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "SUPPORT.md",
+    "DEVELOPMENT.md",
+    "runtime-policy.json",
+    "contract-projection.json",
+    "coverage.json",
+    "AGENTS.md",
+    "examples"
+  ],
+  "license": "MIT",
+  "homepage": "https://availkit.dev/sdk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/availkit/sdk-typescript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/availkit/sdk-typescript/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
